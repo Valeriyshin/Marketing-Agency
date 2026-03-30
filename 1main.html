@@ -1,88 +1,195 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lens</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lens</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="header">
-            <div class="logo"><a href="1main.html"><img src="images/lens.svg" alt="Lens"></a></div>
-            <div class="nav">
-                <ul>
-                    <li><a href="2about.html">О нас</a></li>
-                    <li><a href="3services.html">Услуги</a></li>
-                    <li><a href="4case.html">Кейсы</a></li>
-                    <li><p>+7(707)424-90-77</p></li>
-                </ul>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="1main.html" class="header__logo">
+        <img src="images/lens.svg" alt="Lens">
+      </a>
+
+      <nav class="header__nav">
+        <a href="1main.html">Главная</a>
+        <a href="2about.html">О нас</a>
+        <a href="3services.html">Услуги</a>
+        <a href="4case.html">Кейсы</a>
+      </nav>
+
+      <div class="header__right">
+        <span class="header__divider"></span>
+        <a href="tel:+79964011771" class="header__phone">+7 (777) 777-77-77</a>
+
+        <div class="header__socials">
+          <a href="#" class="header__social">
+            <img src="images/WhatsApp.svg" alt="WhatsApp">
+          </a>
+          <a href="#" class="header__social">
+            <img src="images/Telegram.svg" alt="Telegram">
+          </a>
+        </div>
+
+        <a href="login.html" class="header__btn">Кабинет клиента</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Системный <br>
+            интернет маркетинг <br>
+            для B2B компаний
+          </h1>
+
+          <div class="hero__tags">
+            <div class="hero__tag">Индивидуальный подход на основе стратегии</div>
+            <div class="hero__tag">Привлекаем клиентов со сложным циклом принятия решений</div>
+            <div class="hero__tag">Выполняем KPI в 95% случаев</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero__logos">
+          <img src="images/logos.svg" alt="Клиенты">
+        </div>
+      </div>
+    </section>
+
+    <section class="subtitle-block">
+      <div class="container">
+        <p class="subtitle-block__text">
+          Специализируемся на продвижении решений <br>
+          в сложных нишах с ограниченным спросом, <br>
+          где аудитория не покупает с первого касания, <br>
+          а шаблонные решения не работают.
+        </p>
+      </div>
+    </section>
+
+    <section class="not-conveyor">
+      <div class="container">
+        <h2 class="section-title">Не конвейер</h2>
+
+        <div class="not-conveyor__list">
+          <div class="not-conveyor__card not-conveyor__card--red">
+            <div class="not-conveyor__icon">
+              <img src="images/cross.svg" alt="">
             </div>
-            <div class="contacts">
-                <button><a href="https://wa.me/77074249077" target="_blank"><img src="images/WhatsApp.svg" alt="WhatsApp"></a></button>
-                <button><a href="https://t.me/valeriy_shin" target="_blank"><img src="images/Telegram.svg" alt="Telegram"></a></button>
+            <p>
+              Эффективное продвижение B2B компаний
+              <em>нельзя реализовать “универсальными решениями”</em>,
+              которые предлагают другие рекламные агентства.
+            </p>
+          </div>
+
+          <div class="not-conveyor__card not-conveyor__card--green">
+            <div class="not-conveyor__icon">
+              <img src="images/yes.svg" alt="">
             </div>
-            <div><a href="login.html">Кабинет клиента</a></div>
-    </div>
-    <div class="main">
-        <div><h1>Системный интернет маркетинг для B2B компаний</h1></div>
-        <div>
-            <p>Индивидиуальный подход на основе стратегии</p>
-            <p>Привлекаем клиентов со сложным циклом принятия решений</p>
-            <p>Выполняем KPI в 95% случаев</p>
+            <p>
+              Эффективный подход - глубокое
+              <em>погружение в особенности, специфику конкретного бизнеса</em>,
+              изучение его текущих ресурсов, чтобы найти оптимальное решение.
+            </p>
+          </div>
         </div>
-        <div><img src="images/logos.svg" alt=""></div>
-        <div>
-            <h6>Специализируемся на продвижении решений в сложных нишах с ограниченным спросом, где аудитория не покупает с первого касания, а шаблонные решения не работают.</h6>
+
+        <div class="not-conveyor__btn-wrap">
+          <a href="#" class="white-btn">Оставить заявку</a>
         </div>
-        <div><h2>Не конвейер</h2></div>
-        <div><img src="images/cross.svg" alt=""> <p>Эффективное продвижение B2B компаний нельзя реализовать “универсальными решениями”, которые предлагают другие рекламные агентства.</p></div>
-        <div><img src="images/yes.svg" alt=""> <p>Эффективный подход - глубокое погружение в особенности, специфику конкретного бизнеса, изучение его текущих ресурсов, чтобы найти оптимальное решение.</p></div>
-        <div><h2>Подход нашего B2B агентства</h2></div>
-        <section class="approach">
-  <div class="approach__grid">
+      </div>
+    </section>
 
-    <div class="approach__item">
-      <h3><span>1</span> Стратегия</h3>
-      <div class="line"></div>
-      <p>Глубоко погружаемся в сферу вашего бизнеса. Мы изучаем целевую аудиторию, исследуем конкурентов, разрабатываем план действий, чтобы затем сделать максимум возможного.</p>
-    </div>
+    <section class="approach">
+      <div class="container">
+        <h2 class="section-title">Подход нашего B2B агентства</h2>
 
-    <div class="approach__item">
-      <h3><span>2</span> План</h3>
-      <div class="line"></div>
-      <p>Разрабатываем подробный план, который включает в себя выбор каналов, форматов и определение бюджета. Мы стараемся найти наилучший способ достижения ваших целей и согласовываем все с вами.</p>
-    </div>
+        <div class="approach__grid">
+          <div class="approach__item">
+            <h3><span>1</span> Стратегия</h3>
+            <div class="line"></div>
+            <p>Глубоко погружаемся в сферу вашего бизнеса. Мы изучаем целевую аудиторию, исследуем конкурентов, разрабатываем план действий, чтобы затем сделать максимум возможного.</p>
+          </div>
 
-    <div class="approach__item">
-      <h3><span>3</span> Подготовка</h3>
-      <div class="line"></div>
-      <p>Создаем эффективные и красивые рекламные материалы, устанавливаем трекинговые системы, подключаем и настраиваем рекламные каналы. Интегрируем необходимые дополнения: CRM, calltracking, телефонию, сквозную аналитику.</p>
-    </div>
+          <div class="approach__item">
+            <h3><span>2</span> План</h3>
+            <div class="line"></div>
+            <p>Разрабатываем подробный план, который включает в себя выбор каналов, форматов и определение бюджета. Мы стараемся найти наилучший способ достижения ваших целей и согласовываем все с вами.</p>
+          </div>
 
-    <div class="approach__item">
-      <h3><span>4</span> Реализация</h3>
-      <div class="line"></div>
-      <p>Запускаем рекламные кампании и day-to-day мониторим показатели. Оперативно реагируем, если возникают какие-то расхождения с планом, самостоятельно общаемся с техподдержкой.</p>
-    </div>
+          <div class="approach__item">
+            <h3><span>3</span> Подготовка</h3>
+            <div class="line"></div>
+            <p>Создаем эффективные и красивые рекламные материалы, устанавливаем трекинговые системы, подключаем и настраиваем рекламные каналы. Интегрируем необходимые дополнения: CRM, calltracking, телефонию, сквозную аналитику.</p>
+          </div>
 
-    <div class="approach__item">
-      <h3><span>5</span> Анализ</h3>
-      <div class="line"></div>
-      <p>Тщательно отслеживаем результаты рекламных кампаний и анализируем их. Мы смотрим, как пользователи реагируют на рекламу, и делаем выводы о том, что работает лучше всего.</p>
-    </div>
+          <div class="approach__item">
+            <h3><span>4</span> Реализация</h3>
+            <div class="line"></div>
+            <p>Запускаем рекламные кампании и day-to-day мониторим показатели. Оперативно реагируем, если возникают какие-то расхождения с планом, самостоятельно общаемся с техподдержкой.</p>
+          </div>
 
-    <div class="approach__item">
-      <h3><span>6</span> Оптимизация</h3>
-      <div class="line"></div>
-      <p>Оптимизируем рекламные кампании, используя полученные знания и опыт. Вносим изменения, чтобы достичь лучших результатов. И конечно, мы предоставляем детальный отчет о проделанной работе и о том, что мы сделали, чтобы достичь результата.</p>
-    </div>
+          <div class="approach__item">
+            <h3><span>5</span> Анализ</h3>
+            <div class="line"></div>
+            <p>Тщательно отслеживаем результаты рекламных кампаний и анализируем их. Мы смотрим, как пользователи реагируют на рекламу, и делаем выводы о том, что работает лучше всего.</p>
+          </div>
 
-  </div>
-</section>
-        <div>
-            <div><h3>Получите анализ вашего проекта в течение 3-х рабочих дней</h3></div>
-            <div></div>
+          <div class="approach__item">
+            <h3><span>6</span> Оптимизация</h3>
+            <div class="line"></div>
+            <p>Оптимизируем рекламные кампании, используя полученные знания и опыт. Вносим изменения, чтобы достичь лучших результатов. И конечно, мы предоставляем детальный отчет о проделанной работе и о том, что мы сделали, чтобы достичь результата.</p>
+          </div>
         </div>
-    </div>
-    <div class="footer"></div>
+      </div>
+    </section>
+
+    <section class="request">
+      <div class="container request__container">
+        <div class="request__left">
+          <h2 class="request__title">
+            Получите анализ <br>
+            вашего проекта <br>
+            в течение <br>
+            3-х рабочих дней
+          </h2>
+        </div>
+
+        <div class="request__right">
+          <form class="request-form">
+            <input type="text" placeholder="Имя" class="request-form__input">
+
+            <div class="request-form__phone">
+              <div class="request-form__country">
+                <span class="request-form__flag"></span>
+                <span class="request-form__arrow">&#9662;</span>
+              </div>
+              <input type="tel" placeholder="Номер телефона" class="request-form__input request-form__input--phone">
+            </div>
+
+            <input type="email" placeholder="Email" class="request-form__input">
+            <input type="text" placeholder="Комментарий" class="request-form__input">
+
+            <button type="submit" class="request-form__button">Отправить</button>
+
+            <p class="request-form__policy">
+              Нажимая кнопку "Отправить", вы даете согласие на обработку персональных данных
+              в соответствии с политикой обработки данных
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>
