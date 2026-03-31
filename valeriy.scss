@@ -7,7 +7,7 @@
 body {
   background: #0d0d0f;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
@@ -30,7 +30,9 @@ img {
 
 .header {
   padding: 25px 0;
-  background: #0d0d0f;
+  position: absolute;
+  width: 100%;
+  background: transparent;
 }
 
 .header__container {
@@ -96,8 +98,8 @@ img {
 
 .hero {
   min-height: 100vh;
-  padding: 40px 0 60px;
-  background: url("images/main photo.svg") center center / cover no-repeat;
+  padding: 80px 0 60px;
+  background: url("images/main photo.svg") center bottom / cover no-repeat;
 }
 
 .hero__container {
@@ -113,7 +115,7 @@ img {
 }
 
 .hero__title {
-  font-size: 72px;
+  font-size: 56px;
   line-height: 1.05;
   font-weight: 700;
   margin-bottom: 35px;
@@ -144,6 +146,7 @@ img {
 }
 
 .hero__logos img {
+  padding-top: 80px;
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
@@ -153,7 +156,7 @@ img {
 /* SUBTITLE */
 
 .subtitle-block {
-  padding: 50px 0 80px;
+  padding: 100px 0 80px;
   background: #0d0d0f;
 }
 
@@ -182,7 +185,8 @@ img {
 }
 
 .not-conveyor__list {
-  max-width: 1120px;
+  padding-top: 50px;
+  max-width: 760px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
