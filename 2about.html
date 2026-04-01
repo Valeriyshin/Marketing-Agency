@@ -6,50 +6,116 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="about-top">
-    <div class="about-top-left">
-        
-        <h1>Маркетинговое агентство для B2B компаний</h1> 
-        <p>Комплексно решаем сложные задачи по привлечению клиентов с непростым циклом принятия решений</p>   
-    </div>
+<header class="header">
+    <div class="container header__container">
+      <a href="1main.html" class="header__logo">
+        <img src="images/lens.svg" alt="Lens">
+      </a>
 
-    <div class="circle">
-        <img class="circle-outer" src="images/krug.svg" alt="">
-        <img class="circle-center" src="images/check.svg" alt="">
+      <nav class="header__nav">
+        <a href="1main.html">Главная</a>
+        <a href="2about.html">О нас</a>
+        <a href="3services.html">Услуги</a>
+        <a href="4case.html">Кейсы</a>
+      </nav>
+
+      <div class="header__right">
+        <span class="header__divider"></span>
+        <a href="tel:+79964011771" class="header__phone">+7 (777) 777-77-77</a>
+
+        <div class="header__socials">
+          <a href="#" class="header__social">
+            <img src="images/WhatsApp.svg" alt="WhatsApp">
+          </a>
+          <a href="#" class="header__social">
+            <img src="images/Telegram.svg" alt="Telegram">
+          </a>
+        </div>
+
+        <a href="login.html" class="header__btn">Кабинет клиента</a>
+      </div>
     </div>
+  </header>
+
+
+
+<div class="about-top">
+<div class="container container__about">
+  <div class="about-top-left">
+    <h1>Маркетинговое агентство <br>для B2B компаний</h1>
+    <p>
+      Комплексно решаем сложные задачи по привлечению клиентов <br>с непростым
+      циклом принятия решений
+    </p>
+  </div>
+
+  <div class="circle">
+    <img class="circle-outer" src="images/krug.svg" alt="">
+    <img class="circle-center" src="images/check.svg" alt="">
+  </div>
+  </div>
 </div>
 
 <div class="mission">
-    <div class="mission-h1">
-        <h1></h1>
+  <div class="container container__mission">
+
+    <div class="mission-left">
+      <h1>Наша миссия</h1>
+
+      <p>
+        Мы помогаем B2B-компаниям расти через системный и<br>
+        прозрачный маркетинг.
+        <br>
+        <br>
+        Наша задача — не просто приводить заявки, а выстраивать<br>
+        стабильный поток клиентов, который превращается в реальные <br>
+        сделки и прибыль.
+        <br>
+        <br>
+        Мы убеждены, что эффективный маркетинг — это не про <br>
+        “красивые креативы”, а про стратегию, аналитику и понимание<br>
+        бизнеса клиента.
+        <br>
+        <br>
+        Поэтому мы погружаемся в продукт, изучаем аудиторию и строим <br>
+        решения, которые работают в долгую. <br>
+        Наша миссия — сделать маркетинг понятным, управляемым и<br>
+        измеримым инструментом роста для каждой компании, с которой<br>
+        мы работаем<br>
+      </p>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+
+  </div>
 </div>
 
+<div class="request">
+  <div class="container">
+    <div class="request-box">
+      <h2>Отправить заявку</h2>
 
+      <form class="request-form">
+        <div class="request-left">
+          <input type="text" placeholder="Имя*" />
+          <input type="email" placeholder="Email*" />
+          <input type="tel" placeholder="Телефон*" />
+          <input type="text" placeholder="Сайт" />
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="request-right">
+          <textarea placeholder="Комментарий если нужно"></textarea>
+          <button type="submit">Отправить</button>
+          <p>
+            Нажимая кнопку "Отправить", вы даете согласие на обработку персональных данных в соответствии с
+            <a href="#">политикой обработки данных</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 <div class="footer">
-
+   <div class="container">
     <div class="footer-top">
 
         <div class="footer-left">
@@ -98,6 +164,8 @@
         <span>Политика конфиденциальности</span>
     </div>
 
+</div>  
 </div>
+
 </body>
 </html>
