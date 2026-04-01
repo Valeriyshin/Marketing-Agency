@@ -277,19 +277,19 @@
 }
 
 .client_account {
-  background-color: #000000;
-  min-height:100px ;
+  padding: 90px 0;
+  padding-bottom: 40px;
+  background-color: #000;
   display: flex;
-    align-items: center;
-  justify-content: center;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;       
 }
- .client_account h1{
+
+.client_account h1 {
   font-size: 40px;
-
- }
-
-
-
+  font-weight: 600;
+}
 
 .login {
   background: #ffffff;
