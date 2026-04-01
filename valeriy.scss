@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #0d0d0f;
+  background: black;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -81,8 +81,8 @@ img {
 }
 
 .header__social img {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 .header__btn {
@@ -157,7 +157,7 @@ img {
 
 .subtitle-block {
   padding: 100px 0 80px;
-  background: #0d0d0f;
+  background: black;
 }
 
 .subtitle-block__text {
@@ -181,7 +181,7 @@ img {
 
 .not-conveyor {
   padding: 50px 0 100px;
-  background: #0d0d0f;
+  background: black;
 }
 
 .not-conveyor__list {
@@ -240,7 +240,7 @@ img {
 
 .approach {
   padding: 20px 0 110px;
-  background: #0d0d0f;
+  background: black;
 }
 
 .approach__grid {
@@ -370,7 +370,7 @@ img {
   height: 56px;
   border: none;
   border-radius: 999px;
-  background: #090b12;
+  background: black;
   color: white;
   font-size: 18px;
   cursor: pointer;
@@ -387,7 +387,7 @@ img {
 
 .footer {
   min-height: 200px;
-  background: #0d0d0f;
+  background: black;
 }
 
 /* ADAPTIVE */
@@ -454,5 +454,336 @@ img {
 
   .request__title {
     font-size: 40px;
+  }
+}
+
+
+/* SERVICES PAGE */
+
+.services-page {
+  padding: 100px 0 90px;
+  background: #0d0d0f;
+
+  &__title {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+  }
+}
+
+.services-table {
+  border-top: 1px solid transparent;
+
+  &__row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    padding: 42px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &--center {
+      min-height: 340px;
+    }
+  }
+
+  &__left {
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #fff;
+    }
+  }
+
+  &__right {
+    ul {
+      padding-left: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #fff;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    width: 360px;
+    opacity: 0.75;
+    pointer-events: none;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      rotate: 290deg;
+      filter: blur(1px);
+    }
+  }
+}
+
+/* WHITE INFO BLOCK */
+
+.services-about {
+  background: #f3f3f3;
+  padding: 70px 0;
+
+  &__box {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #111;
+    position: center;
+
+    p {
+      font-size: 28px;
+      line-height: 1.45;
+      font-weight: 700;
+
+      &:not(:last-child) {
+        margin-bottom: 34px;
+      }
+    }
+  }
+}
+
+/* PRICING */
+
+.pricing {
+  background: black;
+  padding: 60px 0 90px;
+
+  &__title {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    max-width: 850px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+}
+
+.pricing-card {
+  background: linear-gradient(180deg, #1a1b20 0%, #15161a 100%);
+  padding: 38px 26px 34px;
+  min-height: 420px;
+  text-align: center;
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 34px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+
+  &__price {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 22px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1024px) {
+  .services-page__title,
+  .pricing__title {
+    font-size: 48px;
+  }
+
+  .services-about__box p {
+    font-size: 22px;
+  }
+
+  .pricing__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .services-table__row {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .services-table__decor {
+    position: static;
+    rotate: 130deg;
+    width: 240px;
+    margin: 10px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page {
+    padding: 50px 0 70px;
+  }
+
+  .services-page__title,
+  .pricing__title {
+    font-size: 36px;
+  }
+
+  .services-table__left p,
+  .services-table__right li,
+  .pricing__text {
+    font-size: 16px;
+  }
+
+  .services-about {
+    padding: 50px 0;
+  }
+
+  .services-about__box p {
+    font-size: 18px;
+  }
+
+  .pricing-card {
+    min-height: auto;
+    padding: 28px 20px;
+  }
+}
+
+.contacts {
+  background: black;
+  padding: 200px 0 100px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #ccc;
+  }
+
+  &__big-icon {
+    width: 300px;
+    opacity: 0.8;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: start;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      width: 40px;
+      opacity: 0.9;
+    }
+
+    a {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 12px;
+
+    img {
+      width: 45px;
+      height: 45px;
+      padding: 6px;
+    }
+  }
+
+  &__work-title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__work-time {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+  }
+}
+
+/* адаптив */
+
+@media (max-width: 1000px) {
+  .contacts__bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contacts__big-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts__title {
+    font-size: 42px;
+  }
+
+  .contacts__bottom {
+    grid-template-columns: 1fr;
   }
 }
