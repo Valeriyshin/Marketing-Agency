@@ -223,13 +223,14 @@
 
 .footer-columns h3 {
   font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .footer-columns a {
   display: block;
   color: white;
   text-decoration: underline;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 15px;
 }
 

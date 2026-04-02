@@ -813,13 +813,14 @@ img {
 
 .footer-columns h3 {
   font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .footer-columns a {
   display: block;
   color: white;
   text-decoration: underline;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 15px;
 }
 
@@ -943,9 +944,6 @@ img {
 }
 
 
-/* =========================
-   TABLET
-   ========================= */
 @media (max-width: 1024px) {
   .container,
   .container__about,
@@ -1122,9 +1120,6 @@ img {
     font-size: 28px;
   }
 }
-/* =========================
-   MOBILE
-   ========================= */
 @media (max-width: 767px) {
   .container,
   .container__about,
@@ -1462,9 +1457,6 @@ img {
     line-height: 1.1;
   }
 }
-/* =========================
-   ANIMATIONS
-   ========================= */
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -1506,12 +1498,10 @@ img {
     transform: scale(1);
   }
 }
-/* HEADER */
 .header {
   animation: fadeDown 0.8s ease;
 }
 
-/* HERO */
 .hero__title {
   animation: fadeLeft 1s ease;
 }
@@ -1532,7 +1522,6 @@ img {
   animation: fadeUp 1s ease 0.3s both, softZoom 4s ease-in-out infinite;
 }
 
-/* BUTTONS */
 .white-btn,
 .header__btn,
 .request-form__button {
@@ -1546,7 +1535,6 @@ img {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* LINKS */
 .header__nav a,
 .contacts__item a,
 .footer-columns a,
@@ -1563,7 +1551,6 @@ img {
   opacity: 0.75;
 }
 
-/* CARDS */
 .not-conveyor__card,
 .pricing-card,
 .services-table__row,
@@ -1578,7 +1565,6 @@ img {
   transform: translateY(-5px);
 }
 
-/* ICONS */
 .header__social img,
 .contacts__socials img,
 .footer-icons img {
@@ -1592,7 +1578,6 @@ img {
   opacity: 0.85;
 }
 
-/* INPUTS */
 .request-form__input,
 .request-form__phone,
 .request-left input,
@@ -1610,7 +1595,6 @@ img {
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.06);
 }
 
-/* BIG ICONS */
 .contacts__big-icon img {
   animation: softZoom 4s ease-in-out infinite;
 }/*# sourceMappingURL=style.css.map */
